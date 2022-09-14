@@ -11,7 +11,7 @@ const Demo = () => {
 
     useEffect(()=>{
  
-     axios.get(api , { headers: { 'Authorization': `Bearer ${token}`} })
+     axios.get(api , { headers: { 'Access-Control-Allow-Origin':'www.https://astro-app1.herokuapp.com', 'Authorization': `Bearer ${token}`} })
         .then(res => {
         console.log(res.data);
        
